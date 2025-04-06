@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GYM Course Management</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F5F5F5;
+    }
+    .navbar {
+      background-color: #1A73E8;
+      color: #FFFFFF;
+      padding: 10px;
+      text-align: center;
+    }
+    .navbar a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .container {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #DDDDDD;
+    }
+    th {
+      background-color: #1A73E8;
+      color: #FFFFFF;
+    }
+    td button {
+      background-color: #FFA726;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+    td button:hover {
+      background-color: #FB8C00;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Course Management</a>
+    <a href="#">Appointment Records</a>
+    <a href="#">Member Management</a>
+  </div>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Time</th>
+          <th>Instructor</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Yoga</td>
+          <td>10:00-11:00</td>
+          <td>Name</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Fitness</td>
+          <td>12:00-13:00</td>
+          <td>Name</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button style="margin-top: 20px; background-color: #1A73E8;">Add Course</button>
+  </div>
+</body>
+</html>
