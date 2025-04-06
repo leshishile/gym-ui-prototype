@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GYM Home</title>
+  <title>GYM Student List</title>
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
@@ -25,32 +25,21 @@
     .container {
       padding: 20px;
     }
-    .course-card {
+    table {
+      width: 100%;
+      border-collapse: collapse;
       background-color: #FFFFFF;
-      padding: 15px;
-      margin-bottom: 10px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .course-card h3 {
-      margin: 0;
-      font-size: 18px;
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #DDDDDD;
     }
-    .course-card p {
-      margin: 5px 0;
-      font-size: 14px;
-      color: #757575;
-    }
-    .course-card button {
+    th {
       background-color: #1A73E8;
       color: #FFFFFF;
-      border: none;
-      border-radius: 4px;
-      padding: 8px 16px;
-      cursor: pointer;
-    }
-    .course-card button:hover {
-      background-color: #1565C0;
     }
   </style>
 </head>
@@ -66,23 +55,31 @@
 </nav>
 
   <div class="navbar">
-    <a href="#">Courses</a>
-    <a href="#">Appointments</a>
-    <a href="#">Profile</a>
+    <a href="#">Schedule</a>
+    <a href="#">Student List</a>
   </div>
   <div class="container">
-    <div class="course-card">
-      <h3>Yoga</h3>
-      <p>Time: 10:00-11:00</p>
-      <p>Instructor: Name</p>
-      <button>Book</button>
-    </div>
-    <div class="course-card">
-      <h3>Fitness</h3>
-      <p>Time: 12:00-13:00</p>
-      <p>Instructor: Name</p>
-      <button>Book</button>
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>email@example.com</td>
+          <td>+1 123 456 7890</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>email@example.com</td>
+          <td>+1 123 456 7890</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>
